@@ -26,4 +26,11 @@ fun subProject(rootFolder: String, vararg pathSegments: String, excludeRootFolde
 
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
+listOf("swissknife", "pillar", "acme-schema-catalogue").forEach { name ->
+    val dir = file("../$name")
+    if (dir.exists()) {
+        includeBuild("../$name")
+    }
+}
+
 include("app")

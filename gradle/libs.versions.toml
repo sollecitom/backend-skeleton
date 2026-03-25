@@ -21,6 +21,8 @@ junit-platform-launcher = { module = "org.junit.platform:junit-platform-launcher
 assertk = { module = "com.willowtreeapps.assertk:assertk", version.ref = "assertk" }
 # build-logic
 kotlin-gradle-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+ben-manes-versions-plugin = { module = "com.github.ben-manes:gradle-versions-plugin", version.ref = "ben-manes-versions" }
+version-catalog-update-plugin = { module = "nl.littlerobots.version-catalog-update:nl.littlerobots.version-catalog-update.gradle.plugin", version.ref = "version-catalog-update" }
 # swissknife
 swissknife-core-domain = { module = "sollecitom.swissknife:core-domain", version.ref = "sollecitom-swissknife" }
 swissknife-core-utils = { module = "sollecitom.swissknife:core-utils", version.ref = "sollecitom-swissknife" }
