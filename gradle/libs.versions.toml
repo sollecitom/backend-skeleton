@@ -1,0 +1,54 @@
+[versions]
+kotlin = "2.3.10"
+kotlinx-coroutines = "1.10.2"
+junit-jupiter = "6.0.3"
+assertk = "0.28.1"
+sollecitom-swissknife = "1.0.0-SNAPSHOT"
+sollecitom-pillar = "1.0.0-SNAPSHOT"
+sollecitom-acme-schema-catalogue = "1.0.0-SNAPSHOT"
+# plugins
+ben-manes-versions = "0.53.0"
+version-catalog-update = "1.1.0"
+
+[libraries]
+kotlinx-coroutines-bom = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-bom", version.ref = "kotlinx-coroutines" }
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core" }
+kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test" }
+junit-jupiter-api = { module = "org.junit.jupiter:junit-jupiter-api", version.ref = "junit-jupiter" }
+junit-jupiter-engine = { module = "org.junit.jupiter:junit-jupiter-engine", version.ref = "junit-jupiter" }
+junit-jupiter-params = { module = "org.junit.jupiter:junit-jupiter-params", version.ref = "junit-jupiter" }
+junit-platform-launcher = { module = "org.junit.platform:junit-platform-launcher", version.ref = "junit-jupiter" }
+assertk = { module = "com.willowtreeapps.assertk:assertk", version.ref = "assertk" }
+# build-logic
+kotlin-gradle-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+# swissknife
+swissknife-core-domain = { module = "sollecitom.swissknife:core-domain", version.ref = "sollecitom-swissknife" }
+swissknife-core-utils = { module = "sollecitom.swissknife:core-utils", version.ref = "sollecitom-swissknife" }
+swissknife-core-test-utils = { module = "sollecitom.swissknife:core-test-utils", version.ref = "sollecitom-swissknife" }
+swissknife-test-utils = { module = "sollecitom.swissknife:test-utils", version.ref = "sollecitom-swissknife" }
+swissknife-kotlin-extensions = { module = "sollecitom.swissknife:kotlin-extensions", version.ref = "sollecitom-swissknife" }
+swissknife-ddd-domain = { module = "sollecitom.swissknife:ddd-domain", version.ref = "sollecitom-swissknife" }
+swissknife-ddd-test-utils = { module = "sollecitom.swissknife:ddd-test-utils", version.ref = "sollecitom-swissknife" }
+swissknife-json-utils = { module = "sollecitom.swissknife:json-utils", version.ref = "sollecitom-swissknife" }
+swissknife-configuration-utils = { module = "sollecitom.swissknife:configuration-utils", version.ref = "sollecitom-swissknife" }
+swissknife-correlation-core-domain = { module = "sollecitom.swissknife:correlation-core-domain", version.ref = "sollecitom-swissknife" }
+swissknife-correlation-core-test-utils = { module = "sollecitom.swissknife:correlation-core-test-utils", version.ref = "sollecitom-swissknife" }
+swissknife-messaging-domain = { module = "sollecitom.swissknife:messaging-domain", version.ref = "sollecitom-swissknife" }
+swissknife-service-domain = { module = "sollecitom.swissknife:service-domain", version.ref = "sollecitom-swissknife" }
+swissknife-logger-core = { module = "sollecitom.swissknife:logger-core", version.ref = "sollecitom-swissknife" }
+swissknife-logging-standard-slf4j-configuration = { module = "sollecitom.swissknife:logging-standard-slf4j-configuration", version.ref = "sollecitom-swissknife" }
+# pillar
+pillar-service-logging = { module = "sollecitom.pillar:service-logging", version.ref = "sollecitom-pillar" }
+pillar-acme-business-domain = { module = "sollecitom.pillar:acme-business-domain", version.ref = "sollecitom-pillar" }
+pillar-http-api-conventions = { module = "sollecitom.pillar:http-api-conventions", version.ref = "sollecitom-pillar" }
+pillar-messaging-domain = { module = "sollecitom.pillar:messaging-domain", version.ref = "sollecitom-pillar" }
+pillar-correlation-logging-utils = { module = "sollecitom.pillar:correlation-logging-utils", version.ref = "sollecitom-pillar" }
+pillar-json-serialization-core = { module = "sollecitom.pillar:json-serialization-core", version.ref = "sollecitom-pillar" }
+# acme-schema-catalogue
+acme-schema-catalogue-avro-common = { module = "sollecitom.acme-schema-catalogue:avro-common", version.ref = "sollecitom-acme-schema-catalogue" }
+acme-schema-catalogue-json-common = { module = "sollecitom.acme-schema-catalogue:json-common", version.ref = "sollecitom-acme-schema-catalogue" }
+
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+ben-manes-versions = { id = "com.github.ben-manes.versions", version.ref = "ben-manes-versions" }
+version-catalog-update = { id = "nl.littlerobots.version-catalog-update", version.ref = "version-catalog-update" }
