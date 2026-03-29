@@ -28,7 +28,6 @@ tasks.withType<KotlinCompile>().configureEach {
         freeCompilerArgs.addAll(
             "-Xjsr305=strict",
             "-Xcontext-parameters",
-            "-opt-in=kotlin.time.ExperimentalTime",
         )
     }
 }
