@@ -3,7 +3,11 @@
 rootProject.name = "backend-skeleton"
 
 pluginManagement {
-    includeBuild("build-logic")
+    repositories {
+        gradlePluginPortal()
+        mavenCentral()
+    }
+    includeBuild("../gradle-plugins")
 }
 
 plugins {

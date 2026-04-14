@@ -33,7 +33,6 @@ just build
 
 ```
 backend-skeleton/
-├── build-logic/          # Convention plugins (includeBuild)
 ├── app/                  # Application module
 ├── gradle/
 │   └── libs.versions.toml   # Centralized dependency versions
@@ -58,6 +57,8 @@ plugins {
     id("sollecitom.kotlin-jvm-conventions")
 }
 ```
+
+This project resolves convention plugins from the sibling `../gradle-plugins` repo.
 
 ## Library Dependencies
 

@@ -8,9 +8,8 @@ General-purpose Kotlin + Java backend skeleton using Gradle (Kotlin DSL). No fra
 
 ### Build System
 - **Gradle 9.3.1** with Kotlin DSL, version catalog (`gradle/libs.versions.toml`), and configuration cache enabled.
-- **`build-logic/`** is an `includeBuild` containing precompiled script plugins (convention plugins). This replaces the legacy `gradle-plugins` repo + `buildSrc` pattern used by older sibling projects.
+- Convention plugins are resolved from the sibling **`../gradle-plugins`** repo.
 - Convention plugins are applied by ID: `sollecitom.kotlin-jvm-conventions`, `sollecitom.maven-publish-conventions`, `sollecitom.dependency-update-conventions`.
-- The `gradle-plugins` repo is NOT used by this project. Do not add it as a dependency.
 
 ### Module Structure
 - Use `module("path", "segments")` in `settings.gradle.kts` to add modules under `modules/`.
@@ -62,6 +61,6 @@ The following were evaluated and intentionally excluded from this project. Do no
 | Docker BuildKit cache mounts | Not desired |
 | Build scans / Develocity | Not desired |
 | SBOM generation (CycloneDX) | Not desired |
-| `gradle-plugins` repo dependency | Replaced by self-contained `build-logic/` |
+| Self-contained local convention plugins | Not desired; use shared `../gradle-plugins` |
 | Jib for Docker images | Plain Dockerfile preferred |
 | Aggregate test metrics (`BuildListener.buildFinished`) | Deprecated API |

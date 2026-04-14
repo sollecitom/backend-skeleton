@@ -40,7 +40,8 @@ update-java:
     @/usr/libexec/java_home -V 2>&1
     @echo ""
     @echo "If the version changed, update the toolchain in:"
-    @echo "  build-logic/src/main/kotlin/sollecitom.kotlin-jvm-conventions.gradle.kts"
+    @echo "  ../gradle-plugins/components/base/src/main/kotlin/sollecitom/plugins/Plugins.kt"
+    @echo "  ../gradle-plugins/components/kotlin-jvm/src/main/kotlin/sollecitom/plugins/conventions/task/kotlin/KotlinTaskConventions.kt"
     @echo "  gradle.properties (dockerBaseImageParam)"
     @echo "  Dockerfile (FROM eclipse-temurin:<version>-alpine)"
 
@@ -50,7 +51,7 @@ update-all:
     just update-java
 
 docker-build:
-    docker build -t backend-skeleton .
+    docker build -f Dockerfile -t backend-skeleton ..
 
 docker-run:
     docker run --rm backend-skeleton
