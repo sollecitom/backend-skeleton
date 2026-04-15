@@ -4,10 +4,18 @@ rootProject.name = "backend-skeleton"
 
 pluginManagement {
     repositories {
+        mavenLocal()
         gradlePluginPortal()
         mavenCentral()
     }
-    includeBuild("../gradle-plugins")
+}
+
+dependencyResolutionManagement {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        maven("https://packages.confluent.io/maven")
+    }
 }
 
 plugins {

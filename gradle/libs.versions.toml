@@ -5,6 +5,7 @@ ben-manes-versions = "0.53.0"
 junit-jupiter = "6.0.3"
 kotlin = "2.3.20"
 kotlinx-coroutines = "1.10.2"
+sollecitom-gradle-plugins = "1.0.2"
 sollecitom-acme-schema-catalogue = "1.0.0-SNAPSHOT"
 sollecitom-pillar = "1.0.0-SNAPSHOT"
 sollecitom-swissknife = "1.0.0-SNAPSHOT"
@@ -53,4 +54,6 @@ version-catalog-update-plugin = { module = "nl.littlerobots.version-catalog-upda
 [plugins]
 ben-manes-versions = { id = "com.github.ben-manes.versions", version.ref = "ben-manes-versions" }
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+sollecitom-dependency-update-conventions = { id = "sollecitom.dependency-update-conventions", version.ref = "sollecitom-gradle-plugins" }
+sollecitom-kotlin-jvm-conventions = { id = "sollecitom.kotlin-jvm-conventions", version.ref = "sollecitom-gradle-plugins" }
 version-catalog-update = { id = "nl.littlerobots.version-catalog-update", version.ref = "version-catalog-update" }
