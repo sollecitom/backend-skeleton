@@ -16,7 +16,6 @@ version-catalog-update = "1.1.0"
 acme-schema-catalogue-avro-common = { module = "sollecitom.acme-schema-catalogue:avro-common", version.ref = "sollecitom-acme-schema-catalogue" }
 acme-schema-catalogue-json-common = { module = "sollecitom.acme-schema-catalogue:json-common", version.ref = "sollecitom-acme-schema-catalogue" }
 assertk = { module = "com.willowtreeapps.assertk:assertk", version.ref = "assertk" }
-ben-manes-versions-plugin = { module = "com.github.ben-manes:gradle-versions-plugin", version.ref = "ben-manes-versions" }
 junit-jupiter-api = { module = "org.junit.jupiter:junit-jupiter-api", version.ref = "junit-jupiter" }
 junit-jupiter-engine = { module = "org.junit.jupiter:junit-jupiter-engine", version.ref = "junit-jupiter" }
 junit-jupiter-params = { module = "org.junit.jupiter:junit-jupiter-params", version.ref = "junit-jupiter" }
@@ -49,7 +48,6 @@ swissknife-logging-standard-slf4j-configuration = { module = "sollecitom.swisskn
 swissknife-messaging-domain = { module = "sollecitom.swissknife:messaging-domain", version.ref = "sollecitom-swissknife" }
 swissknife-service-domain = { module = "sollecitom.swissknife:service-domain", version.ref = "sollecitom-swissknife" }
 swissknife-test-utils = { module = "sollecitom.swissknife:test-utils", version.ref = "sollecitom-swissknife" }
-version-catalog-update-plugin = { module = "nl.littlerobots.version-catalog-update:nl.littlerobots.version-catalog-update.gradle.plugin", version.ref = "version-catalog-update" }
 
 [plugins]
 ben-manes-versions = { id = "com.github.ben-manes.versions", version.ref = "ben-manes-versions" }
