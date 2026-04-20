@@ -11,6 +11,9 @@ pull:
 build:
     ./gradlew updateInternalCatalogVersions && ./gradlew build
 
+cleanup:
+    bash ../scripts/cleanup-maven-local.sh --repo-root . --keep 2 --max-age-days 14
+
 update-internal-dependencies:
     ./gradlew updateInternalCatalogVersions
 
@@ -45,3 +48,6 @@ docker-build:
 
 docker-run:
     docker run --rm backend-skeleton
+
+workflow +steps:
+    bash ../scripts/run-just-workflow.sh {{steps}}
