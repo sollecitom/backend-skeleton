@@ -28,7 +28,7 @@ clean:
     ./gradlew clean
 
 publish:
-    ./gradlew publishToMavenLocal
+    @echo "backend-skeleton does not publish Maven artifacts; skipping publish."
 
 update-dependencies:
     ./gradlew versionCatalogUpdate

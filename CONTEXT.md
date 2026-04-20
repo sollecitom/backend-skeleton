@@ -9,7 +9,7 @@ General-purpose Kotlin + Java backend skeleton using Gradle (Kotlin DSL). No fra
 ### Build System
 - **Gradle 9.3.1** with Kotlin DSL, version catalog (`gradle/libs.versions.toml`), and configuration cache enabled.
 - Convention plugins are resolved from the sibling **`../gradle-plugins`** repo.
-- Convention plugins are applied by ID: `sollecitom.kotlin-jvm-conventions`, `sollecitom.maven-publish-conventions`, `sollecitom.dependency-update-conventions`.
+- Convention plugins are applied by ID: `sollecitom.kotlin-jvm-conventions`, `sollecitom.dependency-update-conventions`.
 
 ### Module Structure
 - Use `module("path", "segments")` in `settings.gradle.kts` to add modules under `modules/`.
@@ -17,8 +17,7 @@ General-purpose Kotlin + Java backend skeleton using Gradle (Kotlin DSL). No fra
 - Each module applies `id("sollecitom.kotlin-jvm-conventions")` and declares its own dependencies from the version catalog.
 
 ### Library Dependencies
-- **swissknife**, **pillar**, and **acme-schema-catalogue** are sibling repos in `../`. They are included via `includeBuild` when present, so local source changes are picked up immediately without `publishToMavenLocal`.
-- If the sibling repos are absent, Gradle falls back to mavenLocal resolution.
+- **swissknife**, **pillar**, and **acme-schema-catalogue** are resolved from published versions in `mavenLocal()`.
 - Internal artifacts use group pattern `sollecitom.*` — routed to mavenLocal. Everything else comes from mavenCentral.
 
 ### Toolchain
@@ -38,6 +37,7 @@ General-purpose Kotlin + Java backend skeleton using Gradle (Kotlin DSL). No fra
 ### Justfile
 - All recipes use **kebab-case** and **full names** (e.g., `update-dependencies`, not `updateDeps`).
 - `update-all` updates dependencies, Gradle wrapper, and JDK.
+- `publish` is intentionally a no-op because this project does not publish Maven artifacts.
 - Workspace-level justfile at `../justfile` has entries for this project.
 
 ### Dependency Updates
