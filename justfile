@@ -11,6 +11,12 @@ pull:
 build:
     ./gradlew updateInternalCatalogVersions && ./gradlew build
 
+license-audit:
+    bash ../scripts/run-license-audit.sh backend-skeleton
+
+generate-sbom:
+    bash ../scripts/run-generate-sbom.sh backend-skeleton
+
 cleanup:
     bash ../scripts/cleanup-maven-local.sh --repo-root . --keep 2 --max-age-days 14
     bash ../scripts/cleanup-docker-images.sh --keep 2 backend-skeleton
