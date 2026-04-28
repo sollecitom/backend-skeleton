@@ -14,6 +14,9 @@ build:
 license-audit:
     bash ../scripts/run-license-audit.sh backend-skeleton
 
+license-audit-compact:
+    bash ../scripts/run-license-audit.sh backend-skeleton --compact
+
 generate-sbom:
     bash ../scripts/run-generate-sbom.sh backend-skeleton
 
