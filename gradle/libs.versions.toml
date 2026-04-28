@@ -5,10 +5,10 @@ ben-manes-versions = "0.54.0"
 junit-jupiter = "6.0.3"
 kotlin = "2.3.21"
 kotlinx-coroutines = "1.10.2"
-sollecitom-gradle-plugins = "1.0.7"
+sollecitom-gradle-plugins = "1.0.8"
 sollecitom-acme-schema-catalogue = "1.0.0"
 sollecitom-pillar = "1.0.1"
-sollecitom-swissknife = "1.0.1"
+sollecitom-swissknife = "1.0.2"
 version-catalog-update = "1.1.0"
 
 [libraries]
