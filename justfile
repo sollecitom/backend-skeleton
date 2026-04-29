@@ -9,7 +9,7 @@ pull:
     git pull
 
 build:
-    ./gradlew updateInternalCatalogVersions && ./gradlew build
+    bash ../scripts/update-internal-catalog-versions.sh . && ./gradlew build
 
 license-audit:
     bash ../scripts/run-license-audit.sh backend-skeleton
@@ -25,7 +25,7 @@ cleanup:
     bash ../scripts/cleanup-docker-images.sh --keep 2 backend-skeleton
 
 update-internal-dependencies:
-    ./gradlew updateInternalCatalogVersions
+    bash ../scripts/update-internal-catalog-versions.sh .
 
 rebuild:
     ./gradlew clean build --refresh-dependencies --rerun-tasks
