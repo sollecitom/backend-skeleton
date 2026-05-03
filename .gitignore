@@ -36,3 +36,4 @@ workspace.xml
 *.tgz
 *.pid
 java_pid*.hprof
+.nwave
