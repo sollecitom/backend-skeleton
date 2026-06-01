@@ -1,4 +1,4 @@
-FROM eclipse-temurin:26-alpine@sha256:6214e73f97e253e116c3eb591534ef45460bbc9af73e46535338b415156bdc33 AS builder
+FROM eclipse-temurin:26-alpine@sha256:048e4cfc893da1d2f7424dd510bd2ebf34b91391916f25a57f6facf42d7a3add AS builder
 
 WORKDIR /build/backend-skeleton
 COPY backend-skeleton/gradle/ gradle/
@@ -9,7 +9,7 @@ COPY gradle-plugins/ ../gradle-plugins/
 
 RUN chmod +x gradlew && ./gradlew :app:installDist --no-daemon
 
-FROM eclipse-temurin:26-jre-alpine@sha256:4b24f10196565c2e3c64cfa232dfe98c3400b89192978c11c4a1acca7cfafb15
+FROM eclipse-temurin:26-jre-alpine@sha256:76868ba39e145de9f157b5e58a4e2f8568d9cb066c66eca0c4372ec95bc486b3
 
 RUN addgroup -S app && adduser -S app -G app
 USER app
