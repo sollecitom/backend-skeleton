@@ -3,12 +3,12 @@ assertk = "0.28.1"
 # plugins
 ben-manes-versions = "0.54.0"
 junit-jupiter = "6.1.0"
-kotlin = "2.3.21"
+kotlin = "2.4.0"
 kotlinx-coroutines = "1.11.0"
-sollecitom-gradle-plugins = "1.0.16"
+sollecitom-gradle-plugins = "1.0.17"
 sollecitom-acme-schema-catalogue = "1.0.0"
-sollecitom-pillar = "1.0.2"
-sollecitom-swissknife = "1.0.6"
+sollecitom-pillar = "1.0.3"
+sollecitom-swissknife = "1.0.7"
 version-catalog-update = "1.1.0"
 
 [libraries]
