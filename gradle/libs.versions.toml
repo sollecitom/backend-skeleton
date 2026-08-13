@@ -6,9 +6,9 @@ junit-jupiter = "6.1.3"
 kotlin = "2.4.10"
 kotlinx-coroutines = "1.11.0"
 sollecitom-gradle-plugins = "1.0.24"
-sollecitom-acme-schema-catalogue = "1.0.1"
-sollecitom-pillar = "1.0.4"
-sollecitom-swissknife = "1.0.14"
+sollecitom-acme-schema-catalogue = "1.0.2"
+sollecitom-pillar = "1.0.5"
+sollecitom-swissknife = "1.0.15"
 version-catalog-update = "1.1.1"
 
 [libraries]
