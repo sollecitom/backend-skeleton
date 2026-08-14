@@ -1,7 +1,7 @@
 [versions]
 assertk = "0.28.1"
 # plugins
-ben-manes-versions = "0.60.0"
+ben-manes-versions = "0.61.0"
 junit-jupiter = "6.1.3"
 kotlin = "2.4.10"
 kotlinx-coroutines = "1.11.0"
