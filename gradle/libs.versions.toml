@@ -7,8 +7,8 @@ kotlin = "2.4.10"
 kotlinx-coroutines = "1.11.0"
 sollecitom-gradle-plugins = "1.0.27"
 sollecitom-acme-schema-catalogue = "1.0.4"
-sollecitom-pillar = "1.0.8"
-sollecitom-swissknife = "1.0.26"
+sollecitom-pillar = "1.0.9"
+sollecitom-swissknife = "1.0.27"
 version-catalog-update = "1.1.1"
 
 [libraries]
